@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           NOCIX Management Panel Dark
 @namespace      NekoBoiNick.NOCIX.Dark
-@version        1.0.1
+@version        1.0.2
 @description    A dark theme for the NOCIX Management Panel
 @author         Neko Boi Nick (https://github.com/thakyZ)
 @homepageURL    https://github.com/thakyZ/nocix-dark
@@ -10,24 +10,26 @@
 @license        MIT
 ==/UserStyle== */
 
-@-moz-document regexp("https\\:\\/\\/my\\.nocix\\.net\\/\\/(?!print\\.php).*"), regexp("https\\:\\/\\/my\\.nocix\\.net\\/(?!\\/print\\.php).*") {
+@-moz-document regexp("https\\:\\/\\/my\\.nocix\\.net\\/\\/(?!print\\.php).*"),
+regexp("https\\:\\/\\/my\\.nocix\\.net\\/(?!\\/print\\.php).*") {
   :root {
     --foreground: #e6e6e6;
     --background: #292929;
-    --bg-0: rgb(73,72,71);
-    --bg-1: rgb(33,32,31);
-    --bg-2: rgb(23,22,21);
+    --bg-0: rgb(73, 72, 71);
+    --bg-1: rgb(33, 32, 31);
+    --bg-2: rgb(23, 22, 21);
     --accent: #0080FF;
     --bshadow: 0 4px 8px var(--shadow);
-    --shadow: rgba(0,0,0,0.251);
+    --shadow: rgba(0, 0, 0, 0.251);
     --dborder: 1px solid var(--bg-1);
     --tdborder: 2px solid var(--bg-0);
     --bborder: 2px solid var(--bg-2);
     --ac: #4f8cc9;
   }
- 
-  
-  input, textarea {
+
+
+  input,
+  textarea {
     width: auto;
     margin: 0;
     padding: 3px 4px;
@@ -35,20 +37,20 @@
     font: normal 11px "lucida grande", tahoma, verdana, arial, sans-serif;
     color: #444;
   }
-  
+
   body {
     color: var(--foreground);
     background: var(--bg-0);
   }
-  
+
   #footer {
     background: var(--bg-1);
   }
-  
+
   #header {
     background: var(--background);
   }
-  
+
   #bar {
     background: var(--accent);
     box-shadow: var(--bshadow);
@@ -57,63 +59,77 @@
     -o-box-shadow: var(--bshadow);
     -ms-box-shadow: var(--bshadow);
   }
-  
-  input, textarea {
+
+  input,
+  textarea {
     background-color: var(--bg-1);
     color: var(--foreground);
     border: var(--tdborder);
   }
-  
+
   input.button {
     color: var(--background);
   }
-  
+
   .tablefrmt tr:hover td {
-	  background-color: var(--bg-0);
+    background-color: var(--bg-0);
   }
-  
+
   #wrap {
     background: var(--bg-0);
   }
-  
+
   #inner-wrap {
     background: var(--bg-1);
   }
+
   .table td {
     background: var(--bg-0);
     color: var(--foreground);
   }
-  #bandwith_graph > div > img {
+
+  #bandwith_graph>div>img {
     background-color: rgb(70, 70, 70);
   }
-  
+
   select {
     background-color: var(--bg-1);
     color: var(--foreground);
     border: var(--tdborder);
   }
-  
-  .boxy, .tablefrmt {
+
+  .boxy,
+  .tablefrmt {
     border: var(--dborder);
     background-color: var(--background);
     border-radius: 4px;
   }
+
   #inner_wrap .boxy {
     background-color: var(--bg-2);
   }
+
   .boxytitle {
     border-bottom: var(--tdborder);
   }
-  .tablefrmt th, .table th {
+
+  .tablefrmt th,
+  .table th {
     border: var(--dborder);
     background: var(--bg-1);
   }
-  .tablefrmt td, .table td {
+
+  .tablefrmt td,
+  .table td {
     border: var(--dborder);
   }
-  .boxy a, #header_links a, #header_links {
+
+  .boxy a,
+  #header_links a,
+  #header_links {
     color: var(--ac) !important
   }
+
   #header_links a:hover {
     border-bottom: 2px solid var(--ac);
   }
